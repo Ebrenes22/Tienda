@@ -1,0 +1,20 @@
+package com.tienda.service;
+
+import com.tienda.domain.Producto;
+import java.util.List;
+
+public interface ProductoService {
+
+    // Se obtiene un listado de productos en un List
+    public List<Producto> getProductos(boolean activos);
+
+    // Se obtiene un Producto a apartir del id de una producto
+    public Producto getProducto(Producto producto);
+
+    //Se inserta una nueva producto si el id del catetgoria esta vacio
+    // se actualiza una producto si el ide del cproducto no esta vacio
+    public void save(Producto producto);
+
+    //Se elimina la producto que tiene id por parametros
+    public void delete(Producto producto);
+}

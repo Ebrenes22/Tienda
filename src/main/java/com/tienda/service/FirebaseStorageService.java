@@ -11,14 +11,14 @@ import org.springframework.stereotype.Service;
  *
  * @author Eliecer_Brenes
  */
+@Service
 public interface FirebaseStorageService {
-    
-    public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta,Long id);
-    
+
+    public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id);
+
     final String BucketName = "techshop-1b151.appspot.com";
     final String rutaSuperiorStorage = "techshop";
     final String rutaJsonFile = "firebase";
-    final String archivoJsonFile = "techshop-1b151-firebase-adminsdk-4q0ut-f25d2c57a4.json" ;
-    
-    
+    final String archivoJsonFile = "techshop-1b151-firebase-adminsdk-4q0ut-f25d2c57a4.json";
+
 }
